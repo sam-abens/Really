@@ -1,0 +1,101 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+header {
+    height: 80px;
+    padding : 20px
+}
+
+.app, header {
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+}
+
+.center {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: scroll;
+    height: calc(100vh - 184px);
+    overflow-x: hidden;
+}
+
+.post-container {
+    display: flex;
+    margin: 10px 0;
+    border-radius: 3px;
+    justify-content: space-between;
+}
+
+.profile {
+    width: calc(10vh - 18px);
+    padding: 1px;
+}
+
+.message-container {
+    width: 85%;
+}
+
+.message {
+    word-wrap: break-word;
+    background-color: #69cc5a97;
+    width: fit-content;
+    max-width: 90%;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.buttons {
+    margin: 10px;
+}
+
+#post-input {
+    width: 65%;
+    border: black solid 3px;
+    border-radius: 5px;
+    height: fit-content;
+    padding: 5px;
+    resize: none;
+}
+
+#name-input {
+    height:fit-content;
+    border: black solid 3px;;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#submit-btn {
+    width: 35px;
+}
+
+#logo {
+    width: 150px;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.submit-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

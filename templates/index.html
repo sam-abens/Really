@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuto Social Network freeCodeCamp</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+
+    <header>
+        <a href="/"><img src="static\assets\Really.png" alt="Logo Really" id="logo"></a>
+    </header>
+    
+    <div class="app">
+    <div class="side"></div>
+    
+    <div class="center">
+
+    <div class="content-container">
+        {% for post in posts %}
+        <div class="post-container">
+            <div class="profile">
+                <img src="" alt="">
+                {{ post[1] }}
+            </div>
+            <div class="message-container"><div class="message">{{ post[2] }}</div></div>
+            <div class="buttons">
+                <a href="/delete/{{ post[0] }}"><img src="static/assets/trash-solid.png" alt="Delete"></a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <form action="/", method="post">
+        <input placeholder="Name", name="name", id="name-input">
+        <textarea placeholder="Post Content", name="post", id="post-input", rows="3", wrap="hard"></textarea>
+        <div class="submit-container">
+            <input type="image" id="submit-btn" src="static/assets/send-btn.png" alt="Submit">
+        </div>
+    </form>
+
+    </div>
+
+    <div class="side"></div>
+    </div>
+
+</body>
+</html>
